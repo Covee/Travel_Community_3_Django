@@ -21,15 +21,19 @@
     <div class="container">
         <div class="row">
             <div class="page-header">
-                <h1>Example page header <small>Subtext for header</small> <a href="#" style="float: right; margin:0px 30px 0px 0px;">Log in</a></h1>
+                <h1>리얼 여행 커뮤니티 <small>한 방에 해결하는 여행 준비!</small> <a href="#" style="float: right; margin:0px 30px 0px 0px; font-size: 25px;">로그인</a></h1>
             </div>
         </div>
         <div class="row center">
             <ul class="nav nav-pills">
-                <li role="presentation" class="active" style='width:260px; text-align:center; margin: 5px 5px 20px 5px' ;><a href="#">menu1</a></li>
-                <li role="presentation"><a href="#" style='width:260px; text-align:center; margin: 5px 5px 20px 5px'>menu2</a></li>
-                <li role="presentation"><a href="#" style='width:260px; text-align:center; margin: 5px 5px 20px 5px'>menu3</a></li>
-                <li role="presentation"><a href="#" style='width:260px; text-align:center; margin: 5px 5px 20px 5px'>menu4</a></li>
+                <li role="presentation" class="active" style='width:130px; text-align:center; margin: 5px 5px 20px 5px';><a href="{% url 'korea' %}">한국</a></li>
+                <li role="presentation"><a href="{% url 'east_asia' %}" style='width:130px; text-align:center; margin: 5px 5px 20px 5px'>동남아</a></li>
+                <li role="presentation"><a href="{% url 'europe' %}" style='width:130px; text-align:center; margin: 5px 5px 20px 5px'>유럽</a></li>
+                <li role="presentation"><a href="{% url 'north_america' %}" style='width:130px; text-align:center; margin: 5px 5px 20px 5px'>북미</a></li>
+                <li role="presentation"><a href="{% url 'south_america' %}" style='width:130px; text-align:center; margin: 5px 5px 20px 5px'>남미</a></li>
+                <li role="presentation"><a href="{% url 'austrailia' %}" style='width:130px; text-align:center; margin: 5px 5px 20px 5px'>호주</a></li>
+                <li role="presentation"><a href="{% url 'africa' %}" style='width:130px; text-align:center; margin: 5px 5px 20px 5px'>아프리카</a></li>
+                <li role="presentation"><a href="{% url 'freeboard' %}" style='width:130px; text-align:center; margin: 5px 5px 20px 5px'>자유게시판</a></li>
             </ul>
 
         </div>
@@ -120,32 +124,26 @@
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-4">
-                            <span class="label label-default">Default</span>
-                            <div class="thumbnail" style="height:230px;">
+                            <span class="label label-default">데일리 평점순</span>
+                            <div class="thumbnail" style="height:200px;">
                                 <div class="caption">
-                                    <p>게시글 1</p>
-                                    <p>게시글 1</p>
-                                    <p>게시글 1</p>
+                                    <p>데일리 평점순</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-4">
-                            <span class="label label-default">Default</span>
-                            <div class="thumbnail" style="height:230px;">
+                            <span class="label label-default">데일리 추천순</span>
+                            <div class="thumbnail" style="height:200px;">
                                 <div class="caption">
-                                    <p>게시글 1</p>
-                                    <p>게시글 1</p>
-                                    <p>게시글 1</p>
+                                    <p>데일리 추천순</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-4">
-                            <span class="label label-default">Default</span>
-                            <div class="thumbnail" style="height:230px;">
+                            <span class="label label-default">데일리 댓글순</span>
+                            <div class="thumbnail" style="height:200px;">
                                 <div class="caption">
-                                    <p>게시글 1</p>
-                                    <p>게시글 1</p>
-                                    <p>게시글 1</p>
+                                    <p>데일리 댓글순</p>
                                 </div>
                             </div>
                         </div>
@@ -153,29 +151,28 @@
                     </div>
 
                     <div class="col-sm-1 col-md-1 pull-right">
-                        <span class="label label-default">Default</span>
+                        <span class="label label-default">세로광고</span>
                         <div class="panel panel-default">
-                            <div class="panel-body" style="height:1040px;font-size:10px;">
-                                Basic panel example
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-6 col-md-6">
-                        <span class="label label-default">Default</span>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                Basic panel example
+                            <div class="panel-body" style="height:1000px;font-size:10px;">
+                                세로광고연결 / 이거 길이 자동 조절되게끔 설정 필요할듯
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-6 col-md-6">
-                        <span class="label label-default">Default</span>
+                        <span class="label label-default">가로광고</span>
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                Basic panel example
+                                가로광고 연결
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6">
+                        <span class="label label-default">가로광고</span>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                가로광고 연결
                             </div>
                         </div>
                     </div>
